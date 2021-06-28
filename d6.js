@@ -113,6 +113,19 @@ console.log(splitMe('Hello mate, how its goin?'))
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+console.log('\n<=== Ex.3  ===>\n')
+function deleteOne(a,b){
+  if (typeof a === 'string'){
+  if ( b === true){
+    return a.slice(1)
+  }
+  if ( b === false){
+    return a.slice(0,-1)
+  }
+} else {return 'not a string'}
+}
+console.log(deleteOne('Hello', true))
+console.log(deleteOne('Hello', false))
 
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
