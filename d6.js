@@ -38,6 +38,13 @@ console.log(random)
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
+console.log('<=== Ex.D ===>')
+let me = {
+  name: 'your name',
+  surname: 'your surname',
+  age: 'your age'
+}
+console.log(me)
 
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
