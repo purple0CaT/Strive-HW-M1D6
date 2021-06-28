@@ -194,9 +194,20 @@ function rollTheDices(par){
 
 console.log(rollTheDices(3))
 
-/* Ex.9
-   Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
-*/
+// /* Ex.9
+//    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
+// */
+console.log('\n<=== Ex.9  ===>\n')
+
+function howManyDays(dys){
+  let previous = new Date(dys.getFullYear(), dys.getMonth()-1, dys.getDate());
+  let current = new Date()
+
+  return Math.ceil((current - previous) / 86400000 - 1) 
+}    
+console.log(howManyDays(new Date(2021, 5, 10)))
+
+
 
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
