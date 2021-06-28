@@ -229,9 +229,21 @@ isTodayMyBirthday(new Date(2000, 6, 18))
 // NOTE: movies array is defined at the end of this file!
 
 /* Ex.11
-   Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
+    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
+console.log('\n<=== Ex.11  ===>\n')
 
+let myObjc = {
+  id: 1, 
+  name: 'Ian', 
+  age: 23 }
+
+function deleteProp(a, b){
+  delete a[b]
+  return a
+}
+
+console.log(deleteProp(myObjc, 'age'))
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
