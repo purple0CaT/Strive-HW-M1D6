@@ -177,6 +177,22 @@ console.log(whatDayIsIt())
         values: [3, 3, 4]
     }
 */
+console.log('\n<=== Ex.8  ===>\n')
+
+function rollTheDices(par){
+  let x = {
+    sum: 0,
+    values: []
+  }
+    for ( i=0; i< par; i++){
+      let y = dice()
+      x.values.push(y)
+      x.sum += y
+    }
+  return x
+  }
+
+console.log(rollTheDices(3))
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
