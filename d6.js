@@ -624,11 +624,11 @@ function removeIndex(a){
 */
 console.log('\n<=== Ex.21  ===>\n')
 function halfTree(a){
-  let y = 0
+  let tree = '*'
+  let utree = ''
   for (i=0; i < a; i++){
-    y += a
-    console.log(y)
-
+    utree += tree
+    console.log(utree)
   }
 
 }
