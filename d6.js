@@ -152,6 +152,20 @@ console.log(isThisAnEmail('smth'))
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
 console.log('\n<=== Ex.7  ===>\n')
+function whatDayIsIt(){
+  let day
+  switch (new Date().getDay()) {
+    case 0: day = "Sunday"; break;
+    case 1: day = "Monday"; break;
+    case 2: day = "Tuesday"; break;
+    case 3: day = "Wednesday"; break;
+    case 4: day = "Thursday"; break;
+    case 5: day = "Friday"; break;
+    case 6: day = "Saturday";
+  }
+  return day
+}
+console.log(whatDayIsIt())
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
