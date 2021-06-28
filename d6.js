@@ -212,6 +212,18 @@ console.log(howManyDays(new Date(2021, 5, 10)))
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+console.log('\n<=== Ex.10  ===>\n')
+
+function isTodayMyBirthday(dys){
+  let myBD = new Date(dys.getFullYear(), dys.getMonth()-1, dys.getDate())
+  let current = new Date()
+  let year = current.getFullYear() - myBD.getFullYear()
+  current.getMonth() == myBD.getMonth() && current.getDate() === myBD.getDate() ? console.log(`Happy birthday dear firend! It's your: ${year} year!`) : console.log('nope, not today :3')
+}
+isTodayMyBirthday(new Date(2000, 6, 28))
+isTodayMyBirthday(new Date(2000, 6, 18))
+
+
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
