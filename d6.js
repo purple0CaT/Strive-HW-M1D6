@@ -382,10 +382,25 @@ olderMovie()
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
+console.log('\n<=== Ex.13  ===>\n')
+
+function countMovies(){
+  console.log('There are: ' + movies.length + ' movies')
+}
+countMovies()
 
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
 */
+console.log('\n<=== Ex.14  ===>\n')
+function onlyTheTitles(){
+  let title = []
+  for(i=0; i<movies.length; i++){
+    title.push(movies[i].Title)
+  }
+  console.log(title)
+}
+onlyTheTitles()
 
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
