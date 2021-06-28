@@ -361,8 +361,9 @@ console.log(deleteProp(myObjc, 'age'))
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 console.log('\n<=== Ex.12  ===>\n')
-
 function olderMovie(){
+  let x = movies
+
   function srt(a, b){
     if ( a.Year < b.Year ){
       return -1;
@@ -372,10 +373,10 @@ function olderMovie(){
     }
     return 0;
   }
-  movies.sort(srt);
+  x.sort(srt);
 
-  for (i=0; i<movies.length; i++){
-    console.log('Movie name: '+movies[i].Title, 'Year: ' + movies[i].Year)
+  for (i=0; i<x.length; i++){
+    console.log('Movie name: '+x[i].Title, 'Year: ' + x[i].Year)
   }
 }
 olderMovie()
@@ -405,7 +406,19 @@ onlyTheTitles()
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
+console.log('\n<=== Ex.15  ===>\n')
 
+function onlyInThisMillennium(){
+  let x = []
+
+  for( i=0; i<movies.length;i++){
+    if(movies[i].Year >= 2000){
+      x.push(movies[i])
+    }
+  }
+  console.log(x)
+}
+onlyInThisMillennium()
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
 */
