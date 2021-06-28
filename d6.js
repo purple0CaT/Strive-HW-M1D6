@@ -141,10 +141,17 @@ console.log(onlyLetters('Hello 4 all my2 frien3ds'))
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
+console.log('\n<=== Ex.6  ===>\n')
+function isThisAnEmail(a){
+  return /\S+@\S+\.\S+/.test(a)
+}
+console.log(isThisAnEmail('smth@gmail.com'))
+console.log(isThisAnEmail('smth'))
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+console.log('\n<=== Ex.7  ===>\n')
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
