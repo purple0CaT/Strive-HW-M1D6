@@ -56,10 +56,15 @@ console.log(me)
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
+me.skills = ['HTML', 'CSS','JavaScript']
+console.log(me)
 
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
+me.skills.pop()
+console.log(me)
+
 
 // JS Functions
 /* Ex.1
