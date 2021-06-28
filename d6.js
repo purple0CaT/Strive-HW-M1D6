@@ -16,14 +16,14 @@
    Create a variable called "test" and assign a string to it.
 
 */
-console.log('<=== Ex.A ===>')
+console.log('\n<=== Ex.A ===>\n')
 let test = `Test`
 console.log(test)
 
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
-console.log('<=== Ex.B ===>')
+console.log('\n<=== Ex.B ===>\n')
 let sum 
 sum = 10+ 20
 console.log(sum)
@@ -31,14 +31,14 @@ console.log(sum)
 /* Ex.C 
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
-console.log('<=== Ex.C ===>')
+console.log('\n<=== Ex.C ===>\n')
 let random = Math.round(Math.random()*(20-0)+0)
 console.log(random)
 
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
-console.log('<=== Ex.D ===>')
+console.log('\n<=== Ex.D ===>\n')
 let me = {
   name: 'your name',
   surname: 'your surname',
@@ -49,6 +49,9 @@ console.log(me)
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
+console.log('\n<=== Ex.E ===>\n')
+delete me.age
+console.log(me)
 
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
