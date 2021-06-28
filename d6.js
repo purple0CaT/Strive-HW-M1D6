@@ -449,7 +449,18 @@ sumAllTheYears()
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
+console.log('\n<=== Ex.18  ===>\n')
 
+function searchByTitle(a){
+  for (i=0;i<movies.length;i++){
+    let x = movies[i].Title.search(a)
+
+    if( x >=0 ){
+      console.log(movies[i])
+    }
+  }
+}
+searchByTitle('Flies')
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
