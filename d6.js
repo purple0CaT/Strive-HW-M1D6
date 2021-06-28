@@ -466,10 +466,36 @@ searchByTitle('Flies')
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
     and another array "unmatch" with all the remaining ones.
 */
+console.log('\n<=== Ex.19  ===>\n')
 
+function searchAndDivide(a){
+let total = {
+  match: '',
+  unmatch: ''
+}
+for (i=0;i<movies.length;i++){
+  let x = movies[i].Title.search(a)
+
+  if( x >=0 ){
+    total.match += `${movies[i].Title}, `
+  } else {
+    total.unmatch += `${movies[i].Title}, `
+  }
+}
+
+  console.log(total)
+}
+  searchAndDivide('Flies')
 /* Ex.20
-   Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
+  Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
+console.log('\n<=== Ex.20  ===>\n')
+
+function removeIndex(a){
+  movies.splice(a,1)
+  console.log(movies)
+}
+  removeIndex(0)
 
 // [EXTRAS] JS Advanced
 
