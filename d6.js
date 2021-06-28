@@ -84,6 +84,21 @@ console.log(dice())
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
 console.log('\n<=== Ex.2  ===>\n')
+function whoIsBigger (a,b){
+  if (a > b){
+    return a
+  }
+  if ( a < b) {
+    return b
+  }
+  if ( a === b) {
+    return 'They are equal'
+}
+}
+console.log(whoIsBigger(1,2))
+console.log(whoIsBigger(3,2))
+console.log(whoIsBigger(2,2))
+
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
