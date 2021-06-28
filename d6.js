@@ -624,10 +624,9 @@ function removeIndex(a){
 */
 console.log('\n<=== Ex.21  ===>\n')
 function halfTree(a){
-  let tree = '*'
   let utree = ''
   for (i=0; i < a; i++){
-    utree += tree
+    utree += '*'
     console.log(utree)
   }
 
@@ -642,6 +641,23 @@ halfTree(3)
    *** 
   *****
 */
+console.log('\n<=== Ex.22  ===>\n')
+function tree(a){
+  let tres = "";
+  for(i=1;i<a;i++){
+    tres = "";
+
+    for(j=i; j<a; j++){
+      tres += " ";
+    }
+
+    for(k=0; k<(i*2)-1; k++){
+      tres += "*";
+    }
+    console.log(tres);
+  }
+}
+tree(5)
 
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
