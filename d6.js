@@ -14,7 +14,11 @@
 
 /* Ex.A
    Create a variable called "test" and assign a string to it.
+
 */
+console.log('<=== Ex.A ===>')
+let test = `Test`
+console.log(test)
 
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
