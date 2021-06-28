@@ -436,7 +436,16 @@ getMovieById('tt0355702')
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
 */
+console.log('\n<=== Ex.17  ===>\n')
 
+function sumAllTheYears(){
+let sum = 0
+  for ( i=0;i<movies.length; i++){
+    sum += parseInt(movies[i].Year)
+  }
+  console.log(sum)
+}
+sumAllTheYears()
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
