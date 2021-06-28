@@ -56,12 +56,16 @@ console.log(me)
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
+console.log('\n<=== Ex.F ===>\n')
+
 me.skills = ['HTML', 'CSS','JavaScript']
 console.log(me)
 
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
+console.log('\n<=== Ex.G ===>\n')
+
 me.skills.pop()
 console.log(me)
 
@@ -70,10 +74,16 @@ console.log(me)
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
+console.log('\n<=== Ex.1  ===>\n')
+function dice (){
+  return Math.round(Math.random()* ( 6-1)+1)
+}
+console.log(dice())
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
+console.log('\n<=== Ex.2  ===>\n')
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
